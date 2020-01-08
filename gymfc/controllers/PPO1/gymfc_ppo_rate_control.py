@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# A working implementation of gymfc attitude rate control using improved openai-baselines
+# A working implementation of gymfc attitude rate control using openai-baselines with some modifications, partly from https://github.com/IBM/constrained-rl
 
 import os
 from baselines.common import tf_util as U
