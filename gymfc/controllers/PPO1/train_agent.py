@@ -96,33 +96,6 @@ def train(num_timesteps, seed, train_model, model_path=None, env_id=None, pi_nam
         )
     env.close()
     return pi
-
-
-    # pi = pposgd_simple.learn(env,policy_fn,
-    #         max_timesteps=num_timesteps,
-    #         timesteps_per_actorbatch=2048,
-    #         clip_param=0.2, entcoeff=0.0,
-    #         optim_epochs=10,
-    #         optim_stepsize=3e-4,
-    #         optim_batchsize=64,
-    #         gamma=0.99,
-    #         lam=0.95,
-    #         schedule='linear', callback=save_fn
-    #     )
-
-
-
-
-# def learn(env, policy_fn, *,
-#         timesteps_per_actorbatch, # timesteps per actor per update
-#         clip_param, entcoeff, # clipping parameter epsilon, entropy coeff
-#         optim_epochs, optim_stepsize, optim_batchsize,# optimization hypers
-#         gamma, lam, # advantage estimation
-#         max_timesteps=0, max_episodes=0, max_iters=0, max_seconds=0,  # time constraint
-#         callback=None, # you can do anything in the callback, since it takes locals(), globals()
-#         adam_epsilon=1e-5,
-#         schedule='constant' # annealing for stepsize parameters (epsilon and adam)
-#         ):
     
 def learn(pi, oldpi, env, 
         max_timesteps,
