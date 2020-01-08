@@ -33,11 +33,8 @@ def main():
         model_path = '/home/p1/gymfc/gymfc/models/test/PPO_seed_38_rew_6.8'
 
         # construct the model object, load pre-trained model and render
-
-        # if a KeyError: 'pi##/obfilter/runningsum:0' error occurs, \
-        # add a pi_name parameter to the train function call with the trained agent's seed num 
      
-        pi = train(num_timesteps=1, seed=seed, train_model=train_model, env_id=env_id, pi_name=34)
+        pi = train(num_timesteps=1, seed=seed, train_model=train_model, env_id=env_id)
         U.load_variables(model_path)
 
         env = gym.make(env_id)
