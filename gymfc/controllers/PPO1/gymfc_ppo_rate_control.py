@@ -13,9 +13,6 @@ from plot_step_response import plot_step_response
 from train_agent import train
 from os import system
 import time
-# from disturbance import wind
-# os.environ['OPENAI_LOGDIR'] = '/home/p1/gymfc/gymfc/Logs'
-# os.environ['OPENAI_LOG_FORMAT'] = 'stdout,tensorboard'
 
 def main():
     # seed = 13
