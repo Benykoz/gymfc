@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+# A working implementation of gymfc attitude rate control using improved openai-baselines
+
 import os
 from baselines.common import tf_util as U
 from baselines.common.tf_util import load_variables
